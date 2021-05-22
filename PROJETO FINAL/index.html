@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/default.css" />
+	
+	<title>VPlayer</title>
+	
+</head>
+<body>	
+	
+		<div >
+			<h4><i class="material-icons">equalizer</i> VPlayer</h4>
+		  <div id="container">
+				<video  id="myVideo">	
+					<source src="videos/vclovis.mp4">	
+				</video>	
+				<output id="timeOut">Time: 0</output>
+				<output id="vidNum">Video: 1/2</output>
+
+				<div id="playButtons">
+					<button id="play" >PLAY</button>
+					<button id="pause">PAUSE</button>
+					<button id="prox">PRÓXIMO</button>
+					<button id="stop">ÍNICIO</button>
+					<button id="av1x">AVANÇAR 1X</button>
+					<button id="re1x">RETROCEDER 1X</button>
+					<button id="mute">MUTAR VÍDEO</button>
+					<button id="mais">+ VOLUME</button>
+					<button id="menos">- VOLUME</button>
+					<button id="pb" onclick=pretobranco()>PRETO E BRANCO</button>
+					<button id="pb" onclick=normal()>CORES</button>
+				</div>
+
+
+		
+		</div>
+	  </div>
+	  <script>
+		  function pretobranco() { 
+			document.getElementById("myVideo").style.filter = "grayscale(100%)";
+		}
+		function normal() { 
+			document.getElementById("myVideo").style.filter = "grayscale(0%)";
+		}
+
+	  </script>
+	  <script src="js/js.js" async></script>
+</body>
+</html>
+</html>
